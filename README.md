@@ -1,5 +1,5 @@
-[![SIT](https://img.shields.io/badge/SIT-awesome-blueviolet.svg)](https://it.schwarz)
-[![USI](https://img.shields.io/badge/SIT-USI-blue)](https://github.com/SchwarzIT/sap-usi)
+[![SIT](https://img.shields.io/badge/SIT-About%20us-%236e1e6e)](https://it.schwarz)
+[![USI](https://img.shields.io/badge/USI-More%20Software-blue)](https://github.com/SchwarzIT/sap-usi)
 # sap-usi-authority-check
 The repository contains the helper class /USI/CL_AUTH that can be used to check, if the user is authorized for the current transaction.
 
