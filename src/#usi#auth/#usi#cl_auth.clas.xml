@@ -45,20 +45,6 @@
      </TEXTPOOL>
     </item>
    </I18N_TPOOL>
-   <DESCRIPTIONS>
-    <SEOCOMPOTX>
-     <CLSNAME>/USI/CL_AUTH</CLSNAME>
-     <CMPNAME>CHECK_TCODE</CMPNAME>
-     <LANGU>E</LANGU>
-     <DESCRIPT>Checks TCode authorization (Leave program, if missing)</DESCRIPT>
-    </SEOCOMPOTX>
-    <SEOCOMPOTX>
-     <CLSNAME>/USI/CL_AUTH</CLSNAME>
-     <CMPNAME>HAS_TCODE</CMPNAME>
-     <LANGU>E</LANGU>
-     <DESCRIPT>Checks TCode authorization (Result as flag)</DESCRIPT>
-    </SEOCOMPOTX>
-   </DESCRIPTIONS>
   </asx:values>
  </asx:abap>
 </abapGit>

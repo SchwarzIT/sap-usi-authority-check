@@ -2,10 +2,10 @@ CLASS /usi/cl_auth DEFINITION PUBLIC FINAL CREATE PUBLIC.
   PUBLIC SECTION.
     TYPE-POOLS abap.
 
-    "! <p class="shorttext synchronized" lang="en">Checks TCode authorization (Leave program, if missing)</p>
+    "! Checks TCode authorization (Leave program, if missing)
     CLASS-METHODS check_tcode.
 
-    "! <p class="shorttext synchronized" lang="en">Checks TCode authorization (Result as flag)</p>
+    "! Checks TCode authorization (Result as flag)
     "!
     "! @parameter i_tcode     | <p class="shorttext synchronized" lang="en">Transaction Code</p>
     "! @parameter r_has_tcode | <p class="shorttext synchronized" lang="en">Flag: Authorized?</p>
@@ -18,11 +18,7 @@ CLASS /usi/cl_auth DEFINITION PUBLIC FINAL CREATE PUBLIC.
   PROTECTED SECTION.
 
   PRIVATE SECTION.
-    TYPES: BEGIN OF ty_transaction,
-             tcode TYPE tcode,
-           END OF ty_transaction.
-
-    TYPES ty_transactions TYPE TABLE OF ty_transaction WITH NON-UNIQUE KEY tcode.
+    TYPES ty_transactions TYPE STANDARD TABLE OF tcode WITH NON-UNIQUE DEFAULT KEY.
 
     CLASS-DATA error TYPE string.
 
@@ -37,7 +33,7 @@ ENDCLASS.
 CLASS /usi/cl_auth IMPLEMENTATION.
   METHOD check_tcode.
     DATA tcodes TYPE ty_transactions.
-    FIELD-SYMBOLS <tcode> TYPE ty_transaction.
+    FIELD-SYMBOLS <tcode> TYPE tcode.
 
     tcodes = read_tcodes( ).
     IF tcodes IS INITIAL.
@@ -46,7 +42,7 @@ CLASS /usi/cl_auth IMPLEMENTATION.
 
     ELSE.
       LOOP AT tcodes ASSIGNING <tcode>.
-        CHECK has_tcode( <tcode>-tcode ) EQ abap_true.
+        CHECK has_tcode( <tcode> ) = abap_true.
         RETURN.
       ENDLOOP.
 
