@@ -20,8 +20,6 @@ CLASS /usi/cl_auth DEFINITION PUBLIC FINAL CREATE PUBLIC.
   PRIVATE SECTION.
     TYPES ty_transactions TYPE STANDARD TABLE OF tcode WITH NON-UNIQUE DEFAULT KEY.
 
-    CLASS-DATA error TYPE string.
-
     CLASS-METHODS read_tcodes
       RETURNING
         VALUE(r_result) TYPE ty_transactions.
@@ -32,6 +30,7 @@ ENDCLASS.
 
 CLASS /usi/cl_auth IMPLEMENTATION.
   METHOD check_tcode.
+    DATA error TYPE string.
     DATA tcodes TYPE ty_transactions.
     FIELD-SYMBOLS <tcode> TYPE tcode.
 
