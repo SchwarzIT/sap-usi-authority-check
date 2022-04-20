@@ -7,8 +7,8 @@ CLASS /usi/cl_auth DEFINITION PUBLIC FINAL CREATE PUBLIC.
 
     "! Checks TCode authorization (Result as flag)
     "!
-    "! @parameter i_tcode     | <p class="shorttext synchronized" lang="en">Transaction Code</p>
-    "! @parameter r_has_tcode | <p class="shorttext synchronized" lang="en">Flag: Authorized?</p>
+    "! @parameter i_tcode     | Transaction Code
+    "! @parameter r_has_tcode | Flag: Authorized?
     CLASS-METHODS has_tcode
       IMPORTING
         !i_tcode           TYPE sytcode
