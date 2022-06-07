@@ -22,7 +22,7 @@
     <item>
      <ID>I</ID>
      <KEY>002</KEY>
-     <ENTRY>You are not authorized for the execution of this action. (Objekt: S_TCODE)</ENTRY>
+     <ENTRY>You are not authorized for the execution of this action! (Objekt: S_TCODE)</ENTRY>
      <LENGTH>100</LENGTH>
     </item>
    </TPOOL>
@@ -39,7 +39,7 @@
       <item>
        <ID>I</ID>
        <KEY>002</KEY>
-       <ENTRY>Sie sind zur Durchführung dieser Aktion nicht berechtigt. (Objekt: S_TCODE, Feld: &amp;1)</ENTRY>
+       <ENTRY>Sie sind zur Durchführung dieser Aktion nicht berechtigt! (Objekt: S_TCODE, Feld: &amp;1)</ENTRY>
        <LENGTH>100</LENGTH>
       </item>
      </TEXTPOOL>
