@@ -45,6 +45,20 @@
      </TEXTPOOL>
     </item>
    </I18N_TPOOL>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>HAS_TCODE</CMPNAME>
+     <SCONAME>I_TCODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transaction Code</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HAS_TCODE</CMPNAME>
+     <SCONAME>R_HAS_TCODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Flag: Authorized?</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
   </asx:values>
  </asx:abap>
 </abapGit>
