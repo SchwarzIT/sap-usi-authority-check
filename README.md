@@ -1,7 +1,6 @@
 <!-- Links used on this page (Declaration) -->
 [CONTRIBUTING]:   ./docs/CONTRIBUTING.md
-[SYSTEM_SETUP]:   https://github.com/SchwarzIT/sap-usi#getting-started
-
+[HOW_TO_PULL]:    https://github.com/SchwarzIT/sap-usi/blob/main/docs/how_to_pull.md
 
 
 
@@ -17,8 +16,8 @@ The class is very simple and would not be worth sharing, but according to our in
 Because of this rule, many of our developments depend on this class.
 
 ## Installation Guide
-Before starting, the system must be [set up for USI][SYSTEM_SETUP].   
 This component has no dependencies and no special authorizations are required.
+But as we are developing in our own namespace, you should consider [this][HOW_TO_PULL].
 
 ## How to contribute
 Please check our [contribution guidelines][CONTRIBUTING] to learn more about this topic.
