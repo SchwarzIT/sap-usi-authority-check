@@ -6,14 +6,7 @@
     <CTEXT>Authority check main package</CTEXT>
     <RESTRICTED>X</RESTRICTED>
     <MAINPACK>X</MAINPACK>
-    <SRV_CHECK>X</SRV_CHECK>
    </DEVC>
-   <PERMISSION>
-    <SCOMPPDTLN>
-     <INTF_NAME>SAP_NWBC_INTERFACE</INTF_NAME>
-     <ERR_SEVER>NONE</ERR_SEVER>
-    </SCOMPPDTLN>
-   </PERMISSION>
   </asx:values>
  </asx:abap>
 </abapGit>

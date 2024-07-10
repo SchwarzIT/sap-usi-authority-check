@@ -5,12 +5,6 @@
    <DEVC>
     <CTEXT>Authority check</CTEXT>
    </DEVC>
-   <PERMISSION>
-    <SCOMPPDTLN>
-     <INTF_NAME>SAP_NWBC_INTERFACE</INTF_NAME>
-     <ERR_SEVER>NONE</ERR_SEVER>
-    </SCOMPPDTLN>
-   </PERMISSION>
   </asx:values>
  </asx:abap>
 </abapGit>
