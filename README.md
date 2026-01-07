@@ -1,6 +1,5 @@
 <!-- Links used on this page (Declaration) -->
 [CONTRIBUTING]:   ./docs/CONTRIBUTING.md
-[HOW_TO_PULL]:    https://github.com/SchwarzIT/sap-usi/blob/main/docs/how_to_pull.md
 
 
 
@@ -17,7 +16,18 @@ Because of this rule, many of our developments depend on this class.
 
 ## Installation Guide
 This component has no dependencies and no special authorizations are required.
-But as we are developing in our own namespace, you should consider [this][HOW_TO_PULL].
+
+It is recommended to create the repository using the follwing settings.
+<img width="956" height="671" alt="image" src="https://github.com/user-attachments/assets/7347ed9f-e353-4622-a9d4-24c4cae59d3c" />
+
+| Field              | Value                                                |
+|--------------------|------------------------------------------------------|
+| Git Repository URL | https://github.com/SchwarzIT/sap-usi-authority-check |
+| Package            | /USI/AUTH_MAIN                                       |
+| Display Name       | USI Authority Check                                  |
+| Labels             | SchwarzIT                                            |
+
+**Note**: The package name **must** start with ``/USI/`` to avoid issues when pulling the repository.
 
 ## How to contribute
 Please check our [contribution guidelines][CONTRIBUTING] to learn more about this topic.
